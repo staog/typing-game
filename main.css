@@ -1,0 +1,11 @@
+img {
+  border-radius: 5px;
+}
+
+.container-fluid {
+  margin-top: 15px;
+}
+
+#text {
+  user-select: none;
+}
