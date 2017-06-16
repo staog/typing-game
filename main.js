@@ -1,7 +1,7 @@
 var counter = 5;
 var position = 0;
 var positionButton = document.getElementsByClassName('position');
-var text = 'Ovo nam je prvi timski projekat.';
+var text = 'This is our first team project.';
 var startButton = document.getElementById('start');
 var writeText = document.getElementById('text');
 var userTextArea = document.getElementsByTagName('textarea')[0];
@@ -9,9 +9,9 @@ var player1TextArea = document.getElementsByTagName('textarea')[1];
 var player2TextArea = document.getElementsByTagName('textarea')[2];
 var player3TextArea = document.getElementsByTagName('textarea')[3];
 var userBtn = document.getElementById('user');
-var ply1btn = document.getElementById('ply1btn');
-var ply2btn = document.getElementById('ply2btn');
-var ply3btn = document.getElementById('ply3btn');
+var bot1btn = document.getElementById('bot1btn');
+var bot2btn = document.getElementById('bot2btn');
+var bot3btn = document.getElementById('bot3btn');
 
 startButton.addEventListener('click', countDown);
 
@@ -60,7 +60,7 @@ function player2() {
     if (textArr.length !== 0) {
       newText += textArr.shift();
       player2TextArea.innerHTML = newText;
-      setTimeout(start, 250);
+      setTimeout(start, 200);
     }else {
       position++;
       ply2btn.innerHTML = "Position: " + position;
@@ -78,7 +78,7 @@ function player3() {
     if (textArr.length !== 0) {
       newText += textArr.shift();
       player3TextArea.innerHTML = newText;
-      setTimeout(start, 350);
+      setTimeout(start, 250);
     }else {
       position++;
       ply3btn.innerHTML = "Position: " + position;
