@@ -1,3 +1,4 @@
+// Declaring variables
 var counter = 6;
 var position = 0;
 var positionButton = document.getElementsByClassName('position');
@@ -13,9 +14,10 @@ var bot1btn = document.getElementById('bot1btn');
 var bot2btn = document.getElementById('bot2btn');
 var bot3btn = document.getElementById('bot3btn');
 
+// Adding event listener on "Start" button
 startButton.addEventListener('click', countDown);
 
-
+// Countdown function
 function countDown() {
   startButton.className = 'btn btn-danger col-lg-6 col-lg-offset-3';
   counter--;
@@ -34,6 +36,7 @@ function countDown() {
   }
 }
 
+// Bot 1 logic
 function bot1() {
   var textArr = text.split('');
   var newText = '';
@@ -52,6 +55,7 @@ function bot1() {
   start();
 }
 
+// Bot 2 logic
 function bot2() {
   var textArr = text.split('');
   var newText = '';
@@ -70,6 +74,7 @@ function bot2() {
   start();
 }
 
+// Bot 3 logic
 function bot3() {
   var textArr = text.split('');
   var newText = '';
@@ -88,10 +93,12 @@ function bot3() {
   start();
 }
 
+// Event listener for finishing the input
 function userTyping() {
   userTextArea.addEventListener('keypress', userFinished);
 }
 
+// Checking is it the same text
 function userFinished(e) {
   if (e.keyCode === 13) {
     var userTypedText = userTextArea.value;
