@@ -43,9 +43,10 @@ function bot1() {
 
   function start() {
     if (textArr.length !== 0) {
+      randNum = Math.floor(Math.random()*(250 - 100) + 100);
       newText += textArr.shift();
       bot1TextArea.innerHTML = newText;
-      setTimeout(start, 150);
+      setTimeout(start, randNum);
     } else {
       position++;
       bot1btn.innerHTML = "Position: " + position;
@@ -62,9 +63,10 @@ function bot2() {
 
   function start() {
     if (textArr.length !== 0) {
+      randNum = Math.floor(Math.random()*(250 - 100) + 100);
       newText += textArr.shift();
       bot2TextArea.innerHTML = newText;
-      setTimeout(start, 200);
+      setTimeout(start, randNum);
     } else {
       position++;
       bot2btn.innerHTML = "Position: " + position;
@@ -81,9 +83,10 @@ function bot3() {
 
   function start() {
     if (textArr.length !== 0) {
+      randNum = Math.floor(Math.random()*(250 - 100) + 100);
       newText += textArr.shift();
       bot3TextArea.innerHTML = newText;
-      setTimeout(start, 250);
+      setTimeout(start, randNum);
     } else {
       position++;
       bot3btn.innerHTML = "Position: " + position;
