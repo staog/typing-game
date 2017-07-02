@@ -2,7 +2,7 @@
 var counter = 6;
 var position = 0;
 var positionButton = document.getElementsByClassName('position');
-var text = 'This is our first team project.';
+var text = 'Why do I only type with my index fingers? I should be using all ten fingers when I type... I am so slooow!';
 var startButton = document.getElementById('start');
 var writeText = document.getElementById('text');
 var userTextArea = document.getElementsByTagName('textarea')[0];
