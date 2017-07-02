@@ -43,7 +43,7 @@ function bot1() {
 
   function start() {
     if (textArr.length !== 0) {
-      randNum = Math.floor(Math.random()*(250 - 100) + 100);
+      randNum = Math.floor(Math.random()*(250 - 100) + 150);
       newText += textArr.shift();
       bot1TextArea.innerHTML = newText;
       setTimeout(start, randNum);
@@ -63,7 +63,7 @@ function bot2() {
 
   function start() {
     if (textArr.length !== 0) {
-      randNum = Math.floor(Math.random()*(250 - 100) + 100);
+      randNum = Math.floor(Math.random()*(250 - 100) + 150);
       newText += textArr.shift();
       bot2TextArea.innerHTML = newText;
       setTimeout(start, randNum);
@@ -83,7 +83,7 @@ function bot3() {
 
   function start() {
     if (textArr.length !== 0) {
-      randNum = Math.floor(Math.random()*(250 - 100) + 100);
+      randNum = Math.floor(Math.random()*(250 - 100) + 150);
       newText += textArr.shift();
       bot3TextArea.innerHTML = newText;
       setTimeout(start, randNum);
